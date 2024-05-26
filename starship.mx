@@ -42,16 +42,18 @@ event onPrompt starship=before {
     prompt = starship_prompt() # Capture the starship prompt
     GLOBAL.STARSHIP_HINT   = $prompt[1] # first line of starship prompt - usually the context and all infos
     GLOBAL.STARSHIP_PROMPT = $prompt[2] # second line of starship prompt - usually the shell prompt
-    out $STARSHIP_HINT # Show the hint above the prompt
+    # Show the hint above the prompt
+    out $STARSHIP_HINT
 }
 
 event onPrompt starship=after {
     ENV.STARSHIP_START_TIME = datetime(--in {now} --out {unix})
 }
 
-config set shell hint-text-func {
-   # out $STARSHIP_HINT # Don't overwrite the hint
-}
+# Don't overwrite the hint
+#config set shell hint-text-func {
+#   out $STARSHIP_HINT 
+#}
 
 config set shell prompt {
     out $STARSHIP_PROMPT

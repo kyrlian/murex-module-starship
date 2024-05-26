@@ -1,13 +1,13 @@
 # murex-module-starship
 
-The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+My fork of the [Murex Module Starship](https://github.com/orefalo/murex-module-starship), to keep the starship hint above the prompt, and not be overwritten by Murex hint.
 
-https://starship.rs/
+[Murex](https://murex.rocks/) Module for [Starship](https://starship.rs/), the minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 ## Install
 
 ```shell
-murex-package install https://github.com/orefalo/murex-module-starship.git
+murex-package install https://github.com/kyrlian/murex-module-starship.git
 ```
 
 ## Update
@@ -15,3 +15,7 @@ murex-package install https://github.com/orefalo/murex-module-starship.git
 ```shell
 murex-package update
 ```
+
+## Original
+
+https://github.com/orefalo/murex-module-starship
